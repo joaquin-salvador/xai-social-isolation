@@ -2,6 +2,9 @@ import streamlit as st
 from model import load_artifacts, DEFAULT_CATEGORY_LABELS, DEFAULT_DISPLAY_NAMES, DEFAULT_LIKERT_FEATURES
 import warnings
 warnings.filterwarnings("ignore")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
 
 st.set_page_config(
     page_title="XAI for Post-COVID Social Isolation Prediction",
