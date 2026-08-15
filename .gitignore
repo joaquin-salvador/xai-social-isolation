@@ -1,3 +1,5 @@
+.idea/
+.venv
 /notebooks/experiments/1 - model_training_baseline/artifacts/
 /notebooks/experiments/1 - model_training_baseline/models/
 /notebooks/experiments/2 - model_training_pca/artifacts/
