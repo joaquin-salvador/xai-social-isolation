@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1db62e29-383d-4c70-94b8-72a4518ef5a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/xai-social-isolation.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/architecture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/computer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/covid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/demographics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/document_data_bunseki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/lifestyle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/counterfactual.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/X_explain.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/X_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/X_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/df_encoded.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/test_predictions.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/y_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/artifacts/y_train.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/cf_sample_indices.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/cfx_methods/method_comparison.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/counterfactual_results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/counterfactual_results_genetic.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/counterfactual_results_kdtree.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/counterfactual_results_limited.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/dice_results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/dice_results_genetic.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/dice_results_kdtree.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/dice_results_limited.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/feature_info.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/shap_expected_value.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/explainers/shap_values_test.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/baseline_results.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/surrogate.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/models/tabpfn.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/cfx_method_comparison_metrics.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/correlation_heatmap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/counterfactuals/cf_feature_analysis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/counterfactuals/cf_limitations_comparison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/counterfactuals/cf_sample_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/feature_distributions.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/feature_distributions_by_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/decision_sample_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/dependence_all_features.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/effects_isolated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/effects_not_isolated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/force_sample_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/importance_isolated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/importance_not_isolated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap/waterfall_sample_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/shap_vs_counterfactual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/target_distribution.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plots/target_rate_by_phase.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/eda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shap_page.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "joaquin-salvador"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:joaquin-salvador/xai-social-isolation.git",
+    "accountId": "8290784e-b338-4d51-96be-d7a5ae1563c4"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3Hwfd2AD1X6V4hvC7WTZrO3Ixqd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "webapp",
+    "last_opened_file_path": "/home/joaquin/PycharmProjects/xai-social-isolation"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-821f704e66d9-5bd6d13a2a75-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-262.9437.214" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1db62e29-383d-4c70-94b8-72a4518ef5a2" name="Changes" comment="" />
+      <created>1786784135515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1786784135515</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
