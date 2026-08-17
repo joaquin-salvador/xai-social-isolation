@@ -518,14 +518,6 @@ def _render_architecture_diagram():
 
 def _render_model_selection():
     """Render the model-selection narrative (baseline benchmark + TabPFN choice)."""
-    st.subheader("Why TabPFN?")
-    st.markdown(
-        "Before settling on TabPFN as the primary model, we "
-        "trained seven candidate classifiers on Phases 1&ndash;3 and evaluates "
-        "every model on the held-out 2024 test set (n&nbsp;=&nbsp;2,659). "
-        "All baselines use scikit-learn defaults so the comparison reflects "
-        "out-of-the-box performance rather than tuning effort."
-    )
 
     baseline_df = pd.DataFrame([
         {"Model": "TabPFN", "Accuracy": 0.725085, "F1-Score": 0.796209, "ROC AUC": 0.768854, "Train Time (s)": 0.845071,
@@ -560,67 +552,10 @@ def _render_model_selection():
               ]))
     st.dataframe(styled, width="stretch", hide_index=True)
 
-    st.markdown(
-        "TabPFN achieves the strongest overall performance among the evaluated baseline "
-        "models, particularly in terms of ROC AUC (0.7689) and F1-Score (0.7962), while "
-        "remaining competitive in Accuracy (0.7251). Random Forest is the closest "
-        "competitor — its Accuracy (0.7255) is effectively tied with TabPFN and it ranks "
-        "second on ROC AUC (0.7608) — but TabPFN retains the strongest class "
-        "discrimination across thresholds without any hyperparameter tuning. The Support "
-        "Vector Machine posts a comparable F1-Score (0.7930) yet a markedly weaker ROC "
-        "AUC (0.6360), indicating poor probability ranking. ROC AUC measures the "
-        "probability that the model ranks a Socially Isolated individual above a "
-        "Not-Isolated one; a score of 0.7689 indicates correct ranking approximately "
-        "77% of the time."
-    )
-    st.caption(
-        "Note: predicting objective social isolation (LSNS-6) is inherently harder "
-        "than predicting subjective loneliness (UCLA) from these features — the "
-        "lifestyle and COVID-impact predictors correlate less strongly with an "
-        "individual's actual social-network size than with their self-reported "
-        "feelings of loneliness."
-    )
-
-
 # About Page
 def render_about():
     """Landing page — study background and pipeline architecture diagram."""
     st.title("📖 About")
-
-    st.subheader("About the Study")
-    st.markdown(
-        "The COVID-19 pandemic caused widespread psychological distress, and in "
-        "Japan, lifestyle changes from teleworking and online classes, alongside "
-        "economic hardship, worsened loneliness and social isolation [1, 2]. Predicting "
-        "post-COVID social isolation raises questions about how machine learning models "
-        "produce mental health classifications, particularly when deep learning systems "
-        "function as \"black boxes\" despite their strong performance [3].\n\n"
-        "This project develops an **explainable AI pipeline** using longitudinal "
-        "survey data from **2,659 Japanese respondents** across four waves "
-        "(**2020–2024**) [4]. The pipeline combines **TabPFN** [5] with an **XGBoost "
-        "surrogate** for computation of **SHAP** [6] feature effects and generation "
-        "of **DiCE** [7] counterfactual explanations. Social isolation is measured "
-        "with the **Lubben Social Network Scale (LSNS-6)**, where a score below **12** "
-        "flags an at-risk individual. On a temporally held-out 2024 "
-        "test set, the model achieves an **ROC-AUC of 0.7689** and an "
-        "**F1-Score of 0.7962**, with SHAP and DiCE agreeing on the features "
-        "that matter most for predicting *social isolation*: **optimism level**, "
-        "**offline social interaction**, and **online social interaction**. "
-        "The generated counterfactual explanations produce actionable, "
-        "person-specific recommendations that a psychiatrist could use in "
-        "clinical intervention [8]."
-    )
-    st.markdown("**Key Innovations**")
-    st.markdown(
-        "- Insight into the key features that contribute to post-COVID-19 "
-        "social isolation.\n"
-        "- The generation of actionable counterfactual explanations using four "
-        "complementary strategies: **KDTree**, **Genetic**, **Random**, and "
-        "**Demographics-Excluded** [7].\n"
-        "- A working interactive XAI application that integrates global SHAP, "
-        "local SHAP, all four counterfactual variants, and a live What-If "
-        "panel for real-time exploration of model predictions."
-    )
 
     with st.expander("📚 References", expanded=False):
         st.markdown(
@@ -660,14 +595,6 @@ def render_overview(model, X_test, y_test, class_names, precomputed_preds):
     from sklearn.metrics import accuracy_score, f1_score, roc_auc_score, confusion_matrix
 
     st.title("📊 Model Overview")
-
-    st.info(
-        "This page focuses on **how well the model performs** on the "
-        "held-out 2024 test set. It compares the seven baseline classifiers "
-        "evaluated in the training notebook, then drills into the chosen "
-        "TabPFN model's accuracy, F1, ROC AUC, confusion matrix, and "
-        "prediction-confidence distribution."
-    )
 
     _render_model_selection()
     st.markdown("---")
